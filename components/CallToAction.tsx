@@ -1,10 +1,11 @@
 import { FaBalanceScale } from 'react-icons/fa';
-import { Image } from '@nextui-org/react';
+import Image from 'next/image';
+
 
 export default function CallToAction() {
   return (
     <div className="relative py-12 md:py-24 bg-red-400 text-white font-bold w-full h-[400px]">
-      <Image src="/deptos/WhatsApp Image 2023-10-01 at 2.51.39 PM.jpeg" alt="Fondo de redes sociales" className="absolute top-0 left-0 w-full h-full object-cover opacity-50 z-0" />
+      <Image src="/deptos/image1.jpeg" alt="Fondo de redes sociales" width={1600} height={600} className="absolute top-0 left-0 w-full h-full object-cover opacity-50 z-0" />
       <div className="relative z-10 p-8">
         <div className='flex flex-col items-center justify-center'>
         <h2 className="text-4xl md:text-5xl mb-6">¿Listo para olvidate de los problemas?</h2>
