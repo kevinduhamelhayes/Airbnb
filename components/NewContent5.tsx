@@ -1,28 +1,38 @@
+"use client";
+
 import React from 'react';
-import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Image } from "@/components/ui/image";
 
 const NewContent5 = () => {
     return (
-        <Card className='flex flex-col lg:flex-row w-full lg:w-[1300px] min-h-[500px] max-h-[1050px] overflow-hidden lg:h-[400px] bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto '>
-
-            <CardBody className='p-6 w-full lg:w-[50%]'>
-                <ul>
-                    <li className='mb-6'>
-                        <h4 className='text-xl font-semibold'>Seguridad en tu eleccion</h4>
-                        <p className='text-lg'>Con años de experiencia en el mercado, garantizamos una gestión confiable y eficiente de tus propiedades.</p>
+        <Card className='flex flex-col lg:flex-row w-full max-w-7xl min-h-[500px] lg:h-[400px] bg-card mt-20 rounded-xl shadow-lg mx-auto overflow-hidden animate-fade-in'>
+            <CardContent className='p-6 w-full lg:w-1/2 flex items-center'>
+                <ul className="space-y-6">
+                    <li className='transition-all duration-300 hover:translate-x-1'>
+                        <h4 className='text-xl font-semibold text-primary'>Seguridad en tu elección</h4>
+                        <p className='text-lg text-muted-foreground'>Con años de experiencia en el mercado, garantizamos una gestión confiable y eficiente de tus propiedades.</p>
                     </li>
-                    <li className='mb-6'>
-                        <h4 className='text-xl font-semibold'>Renta asegurada en dólares</h4>
-                        <p className='text-lg'>Aseguramos tu renta en dólares, brindando estabilidad y previsibilidad a tu inversión.</p>
+                    <li className='transition-all duration-300 hover:translate-x-1'>
+                        <h4 className='text-xl font-semibold text-primary'>Renta asegurada en dólares</h4>
+                        <p className='text-lg text-muted-foreground'>Aseguramos tu renta en dólares, brindando estabilidad y previsibilidad a tu inversión.</p>
                     </li>
-                    <li className='mb-6'>
-                        <h4 className='text-xl font-semibold'>Tranquilidad y Confiabilidad</h4>
-                        <p className='text-lg'>Nuestro equipo de profesionales se encarga de todo, desde la gestión de reservas hasta el mantenimiento, para que puedas descansar tranquilo.</p>
+                    <li className='transition-all duration-300 hover:translate-x-1'>
+                        <h4 className='text-xl font-semibold text-primary'>Tranquilidad y Confiabilidad</h4>
+                        <p className='text-lg text-muted-foreground'>Nuestro equipo de profesionales se encarga de todo, desde la gestión de reservas hasta el mantenimiento, para que puedas descansar tranquilo.</p>
                     </li>
                 </ul>
-            </CardBody>
-            <CardFooter className='w-full flex items-center justify-center max-h-[500px] lg:w-[50%] relative m-2 border-2'>
-                <Image src="/deptos/WhatsApp Image 2023-10-01 at 12.07.49 PM.jpeg" alt='depto1' className=' rounded-lg object-contain w-full h-[750px]' />
+            </CardContent>
+            <CardFooter className='w-full lg:w-1/2 p-0 m-0'>
+                <div className="relative w-full h-full overflow-hidden">
+                    <Image 
+                        src="/deptos/WhatsApp Image 2023-10-01 at 12.07.49 PM.jpeg" 
+                        alt='Apartamento moderno' 
+                        width={650} 
+                        height={750}
+                        className='object-cover w-full h-full transition-transform duration-700 hover:scale-105' 
+                    />
+                </div>
             </CardFooter>
         </Card>
     )

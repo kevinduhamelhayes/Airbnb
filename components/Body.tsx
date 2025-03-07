@@ -1,5 +1,10 @@
 import React from "react";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import FAQs from './constants/FaqConstants'
 
 const Body = () => {
@@ -8,13 +13,20 @@ const Body = () => {
             <h3 className="text-3xl mt-14 font-bold">
                 Preguntas Frecuentes
             </h3>
-            <Accordion variant="shadow" className="border-slate-200 shadow-2xl  bg-slate-400 max-w-[1100px] mt-12 text-black rounded-lg">
-                {FAQs.map((faq) => (
-                    <AccordionItem key={faq.id} aria-label={faq.title} title={faq.title} className="text-black ">
-                        {faq.content}
-                    </AccordionItem>
-                ))}
-            </Accordion>
+            <div className="max-w-[1100px] w-full mt-12 px-4">
+                <Accordion type="single" collapsible className="bg-white/90 dark:bg-slate-800 shadow-xl rounded-lg overflow-hidden">
+                    {FAQs.map((faq) => (
+                        <AccordionItem key={faq.id} value={`item-${faq.id}`}>
+                            <AccordionTrigger className="px-4 text-black dark:text-white font-medium">
+                                {faq.title}
+                            </AccordionTrigger>
+                            <AccordionContent className="px-4 text-gray-700 dark:text-gray-300">
+                                {faq.content}
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
+            </div>
         </section>
     );
 }
