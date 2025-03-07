@@ -1,4 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Airbnb Clone
+
+Este es un proyecto de clon de Airbnb construido con tecnologías modernas de desarrollo web. El proyecto demuestra las mejores prácticas en desarrollo frontend y ofrece una experiencia de usuario similar a la plataforma original de Airbnb.
+
+## 🚀 Tecnologías Utilizadas
+
+- [Next.js 13](https://nextjs.org/) - Framework de React con renderizado del lado del servidor
+- [TypeScript](https://www.typescriptlang.org/) - Superset tipado de JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Framework de CSS utility-first
+- [NextUI](https://nextui.org/) - Biblioteca de componentes modernos
+- [Framer Motion](https://www.framer.com/motion/) - Biblioteca para animaciones
+- [React Icons](https://react-icons.github.io/react-icons/) - Iconos populares para React
+
+## 🛠️ Instalación
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/kevinduhamelhayes/Airbnb.git
+```
+
+2. Instala las dependencias:
+```bash
+npm install
+# o
+yarn install
+```
+
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+# o
+yarn dev
+```
+
+## 🌟 Características
+
+- Diseño responsive moderno
+- Interfaz de usuario intuitiva
+- Animaciones fluidas
+- Componentes reutilizables
+- Optimización de rendimiento
+- TypeScript para mejor mantenibilidad
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 👨‍💻 Autor
+
+Kevin Duhamel Hayes
+- GitHub: [@kevinduhamelhayes](https://github.com/kevinduhamelhayes)
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Para cambios importantes, por favor abre primero un issue para discutir lo que te gustaría cambiar.
+
+## 📫 Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
 
 ## Getting Started
 
