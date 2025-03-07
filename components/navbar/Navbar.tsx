@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Image } from "@/components/ui/image";
+import Image from "next/image";
 import { Menu, X, Home } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
@@ -25,8 +25,8 @@ export function Navbar() {
           <div className="hidden md:block">
             <Image 
               src="/svgs/airbnb-1.svg" 
-              width={60} 
-              height={60} 
+              width={30} 
+              height={30} 
               alt="Airbnb Logo" 
               className="rounded-none"
             />

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { Image } from '@/components/ui/image';
+import Image from "next/image";
 
 const Footer1 = () => {
   return (
     <footer className="flex flex-col min-h-[250px] w-full md:flex-col items-center space-y-10 bg-white px-20 py-10 font-medium text-red-500">
       <div className="flex w-full flex-col md:flex-row md:justify-between space-y-5 md:space-y-0">
         <figure className="flex flex-col items-center ">
-          <Image src="/svgs/airbnb-1.svg" width={200} height={200} alt="The Managers Logo" className="rounded-none" />
+          <Image src="/svgs/airbnb-1.svg" width={150} height={150} alt="The Managers Logo" className="rounded-none" />
         </figure>
         <div>
           <h2 className="flex items-center space-x-2 text-2xl">
