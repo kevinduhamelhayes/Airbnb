@@ -1,7 +1,7 @@
-import { Button } from '@nextui-org/react';
 import React from 'react';
 import { FaInstagram, FaTwitter } from 'react-icons/fa';
 import { SiOnlyfans } from 'react-icons/si';
+import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
@@ -34,8 +34,12 @@ const Hero = () => {
         <h2 className='text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-500 gradient-animated'>Maximiza tus ganancias, minimiza tu esfuerzo.</h2>
 <p className="mt-2">Deja en nuestras manos la gestión de tus redes y enfócate en lo que mejor sabes hacer: <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500 gradient-animated">crear contenido</span>.</p>
 
-        <Button className="mt-4 py-8 border-4 text-white font-extrabold text-2xl hover:text-white " color="warning" variant="bordered" >
-        Comienza Ahora
+        <Button 
+          variant="outline" 
+          size="lg" 
+          className="mt-4 py-8 border-4 text-white font-extrabold text-2xl hover:text-white hover:bg-yellow-600 border-yellow-500"
+        >
+          Comienza Ahora
         </Button>
         
         </div>

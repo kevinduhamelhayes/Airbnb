@@ -1,7 +1,5 @@
 import { RiScales3Line } from 'react-icons/ri';
 import CardPrices from './CardPrices';
-import { Image, Button } from '@nextui-org/react';
-
 
 export default function CardsPrices() {
   return (
@@ -24,9 +22,9 @@ export default function CardsPrices() {
       <div className="absolute z-30 w-full h-full flex flex-col items-center justify-center text-white">
         <h1 className="text-5xl pl-8 font-extrabold mb-8 text-center">Gestión Profesional de Tus Propiedades</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <CardPrices planType="basic" />
-<CardPrices planType="intermediate" />
-<CardPrices planType="full" />
+          <CardPrices planType="basic" />
+          <CardPrices planType="intermediate" />
+          <CardPrices planType="full" />
         </div>
       </div>
     </div>

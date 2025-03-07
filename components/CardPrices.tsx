@@ -1,7 +1,13 @@
 import React from 'react';
-import {
-  Card, CardHeader, CardBody, CardFooter, Divider, Link, Button,
-} from '@nextui-org/react';
+import Link from 'next/link';
+import { 
+  Card, 
+  CardHeader, 
+  CardContent, 
+  CardFooter 
+} from '@/components/ui/card';
+import { Divider } from '@/components/ui/divider';
+import { Button } from '@/components/ui/button';
 
 interface PlanDetailsType {
   title: string;
@@ -85,19 +91,19 @@ function CardPrices({ planType = 'basic' }) {
           </div>
         )}
       </CardHeader>
-      <Divider className='text-white' />
-      <CardBody>
+      <Divider className='bg-white/30' />
+      <CardContent className="pt-6">
         <ul className="px-1">
           <li className="text-5xl font-semibold mb-4">{planDetails.price}</li>
           {planDetails.features.map((feature, index) => (
             <li key={index} className="mt-2">{feature}</li>
           ))}
         </ul>
-      </CardBody>
-      <Divider className='text-white' />
-      <CardFooter className="min-h-[80px]">
-        <Link>
-          <Button color="primary" variant="solid" className="bg-white text-red-600 px-32 text-lg font-medium">
+      </CardContent>
+      <Divider className='bg-white/30' />
+      <CardFooter className="min-h-[80px] justify-center">
+        <Link href="/contact">
+          <Button variant="default" className="bg-white text-red-600 px-32 text-lg font-medium hover:bg-white/90">
             Contratar
           </Button>
         </Link>
