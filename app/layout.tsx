@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/theme-context";
-import { Header } from "@/components/layout/header";
+import { Navbar } from "@/components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system" storageKey="airbnb-theme">
           <div className="relative flex min-h-screen flex-col">
-            <Header />
+            <Navbar />
             <main className="flex-1">{children}</main>
           </div>
         </ThemeProvider>
